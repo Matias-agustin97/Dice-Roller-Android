@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context=".MainActivity" >
+    <!--El de arriba centra el root, y con el todos los elementos horizontal o verticalmente layout_gravity
+    To center all the child elements at once, use center_vertical on the parent (the LinearLayout element), as shown above.
+    -->
+
+
+
+    <!--layout gravity sirve para centrar elementos individualmente ya sea horizontal o verticalmente
+    android:orientation hace que el root view camie de orientacion
+    -->
+    <TextView
+        android:id="@+id/result_text"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <Button
+        android:id="@+id/roll_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/roll_label" />
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:text="@string/addButton"
+        android:id="@+id/button_adder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</LinearLayout>
